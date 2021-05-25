@@ -8,8 +8,10 @@ const quote5 = ["We may encounter many defeats but we must not be defeated"];
 //An array of all the arrays above
 const inspirationalQuotes = [quote1, quote2, quote3, quote4, quote5];
 
-//Function:
-let inspirationalQuotesLength = inspirationalQuotes.length;
-for(let i = 0; i < inspirationalQuotesLength; i++) {
-    
-}
+//Function: 
+let randInspirationalQuotes = inspirationalQuotes[Math.floor(Math.random() * inspirationalQuotes.length)];
+//console.log(randInspirationalQuotes)
+
+let message = `This is your random message: "${randInspirationalQuotes}" Always remember this when you need that extra bit of motivation.`;
+
+console.log(message);
